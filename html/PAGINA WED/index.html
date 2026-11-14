@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>EduJuegos - Aprende jugando</title>
+
+  <style>
+    /* ====== ESTILOS BÁSICOS ====== */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f5f5f5;
+      color: #333;
+    }
+
+    /* ====== ENCABEZADO ====== */
+    header {
+      background-color: #c62828;
+      color: white;
+      padding: 15px 30px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    header h1 {
+      font-size: 28px;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin-left: 20px;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    /* ====== SECCIÓN INICIO ====== */
+    #inicio {
+      background-color: #e53935;
+      color: white;
+      text-align: center;
+      padding: 60px 20px;
+    }
+
+    #inicio h2 {
+      font-size: 36px;
+      margin-bottom: 15px;
+      color: white;
+    }
+
+    #inicio p {
+      font-size: 18px;
+      margin-bottom: 25px;
+    }
+
+    .boton {
+      background-color: white;
+      color: #c62828;
+      padding: 12px 25px;
+      text-decoration: none;
+      font-weight: bold;
+      border-radius: 5px;
+      border: none;
+      cursor: pointer;
+      font-size: 16px;
+    }
+
+    .boton:hover {
+      background-color: #ffcdd2;
+    }
+
+    /* ====== SECCIONES GENERALES ====== */
+    section {
+      padding: 40px 30px;
+    }
+
+    section h2 {
+      color: #c62828;
+      text-align: center;
+      margin-bottom: 25px;
+    }
+
+    /* ====== MÓDULOS ====== */
+    .modulos {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: center;
+    }
+
+    .tarjeta {
+      background-color: white;
+      border: 2px solid #c62828;
+      border-radius: 8px;
+      padding: 20px;
+      width: 250px;
+      text-align: center;
+    }
+
+    .tarjeta h3 {
+      color: #c62828;
+      margin-bottom: 10px;
+    }
+
+    .tarjeta p {
+      margin-bottom: 15px;
+      font-size: 14px;
+    }
+
+    .tarjeta button {
+      background-color: #c62828;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    .tarjeta button:hover {
+      background-color: #8e0000;
+    }
+
+    /* ====== FORMULARIO DE INGRESO ====== */
+    .formulario {
+      background-color: white;
+      max-width: 350px;
+      margin: 0 auto;
+      padding: 25px;
+      border: 2px solid #c62828;
+      border-radius: 8px;
+    }
+
+    .formulario label {
+      display: block;
+      margin-top: 10px;
+      font-weight: bold;
+    }
+
+    .formulario input,
+    .formulario select {
+      width: 100%;
+      padding: 8px;
+      margin-top: 5px;
+      border: 1px solid #999;
+      border-radius: 4px;
+    }
+
+    .formulario button {
+      width: 100%;
+      margin-top: 20px;
+      background-color: #c62828;
+      color: white;
+      border: none;
+      padding: 12px;
+      font-size: 16px;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    .formulario button:hover {
+      background-color: #8e0000;
+    }
+
+    /* ====== PIE DE PÁGINA ====== */
+    footer {
+      background-color: #c62828;
+      color: white;
+      text-align: center;
+      padding: 20px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- ENCABEZADO -->
+  <header>
+    <h1>EduJuegos</h1>
+    <nav>
+      <a href="#inicio">Inicio</a>
+      <a href="#modulos">Módulos</a>
+      <a href="#ingreso">Ingresar</a>
+    </nav>
+  </header>
+
+  <!-- INICIO -->
+  <section id="inicio">
+    <h2>¡Aprende jugando!</h2>
+    <p>Una app educativa para estudiantes del colegio: cálculo, filosofía, español e inglés.</p>
+    <a href="#ingreso" class="boton">Ingresar ahora</a>
+  </section>
+
+  <!-- MÓDULOS -->
+  <section id="modulos">
+    <h2>Nuestros Módulos</h2>
+    <div class="modulos">
+
+      <div class="tarjeta">
+        <h3>Cálculo</h3>
+        <p>Resuelve límites, derivadas e integrales con juegos y retos divertidos.</p>
+        <button onclick="alert('Módulo de Cálculo próximamente')">Entrar</button>
+      </div>
+
+      <div class="tarjeta">
+        <h3>Filosofía</h3>
+        <p>Conoce a los grandes pensadores y responde preguntas tipo trivia.</p>
+        <button onclick="alert('Módulo de Filosofía próximamente')">Entrar</button>
+      </div>
+
+      <div class="tarjeta">
+        <h3>Español</h3>
+        <p>Mejora tu ortografía, gramática y comprensión de lectura jugando.</p>
+        <button onclick="alert('Módulo de Español próximamente')">Entrar</button>
+      </div>
+
+      <div class="tarjeta">
+        <h3>Inglés</h3>
+        <p>Aprende vocabulario y gramática con juegos de memoria y preguntas.</p>
+        <button onclick="alert('Módulo de Inglés próximamente')">Entrar</button>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- INGRESO -->
+  <section id="ingreso">
+    <h2>Ingresar</h2>
+    <div class="formulario">
+      <label for="tipo">Soy:</label>
+      <select id="tipo">
+        <option value="estudiante">Estudiante</option>
+        <option value="docente">Docente</option>
+        <option value="admin">Administrador</option>
+      </select>
+
+      <label for="usuario">Usuario:</label>
+      <input type="text" id="usuario" placeholder="Escribe tu usuario">
+
+      <label for="clave">Contraseña:</label>
+      <input type="password" id="clave" placeholder="Escribe tu contraseña">
+
+      <button onclick="ingresar()">Ingresar</button>
+    </div>
+  </section>
+
+  <!-- PIE DE PÁGINA -->
+  <footer>
+    <p>Contacto</p>
+    <p>Correo: <a href="mailto:rochaalejandro069@gmail.com" style="color: white;">rochaalejandro069@gmail.com</a></p>
+    <p>Teléfono: <a href="tel:+573103563067" style="color: white;">310 356 3067</a></p>
+    <p style="margin-top: 10px;">EduJuegos - Proyecto SENA © 2026</p>
+  </footer>
+
+  <script>
+    // Función sencilla para el ingreso (es una simulación)
+    function ingresar() {
+      var usuario = document.getElementById("usuario").value;
+      var clave = document.getElementById("clave").value;
+      var tipo = document.getElementById("tipo").value;
+
+      if (usuario === "" || clave === "") {
+        alert("Por favor completa todos los campos");
+      } else {
+        alert("Bienvenido " + usuario + " (" + tipo + ")");
+      }
+    }
+  </script>
+
+</body>
+</html>

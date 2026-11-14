@@ -1,0 +1,85 @@
+<html lang="es">
+        <head>
+            <meta charset="UTF-8" />
+            <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+            <title>Ferretería</title>
+            <link rel="stylesheet" href="CSS/estilos.css" />
+
+        </head>
+        <body>
+            <header>
+                <h1>Bienvenido a la Ferretería  
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Inicio</a></li>
+                        <li><a href="productos.html">Productos</a></li>
+                        <li><a href="contacto.html">Contacto</a></li>
+                    </ul>
+                </nav>
+            </header>
+
+            <main>
+                <section ID="productos-destacados" class="fondo-rosado">
+                    <h2>Productos Destacados</h2>
+                    <article class="productos">
+                        <article class="productos">
+                            <h3>Taladro Eléctrico</h3>
+                            <p>Potente taladro para tus proyectos de bricolaje.</p>
+                            <p class="precio">$150.000</p>
+                            <button class="btn-comprar" data-producto="taladro">
+                                Comprar
+                                </button>
+                        </article>
+                        <article class="productos">
+                            <h3>Juego de Destornilladores</h3>
+                            <p>Set completo de destornilladores para todo tipo de tornillos.</p>
+                            <p class="precio">$80.000</p>
+                            <button class="btn-comprar" data-producto="destornilladores">
+                                Comprar
+                                </button>
+                        </article>
+                        <article class="productos">
+                            <h3>Martillo Profesional</h3>
+                            <p>Martillo resistente para trabajos pesados.</p>
+                            <p class="precio">$120.000</p>
+                            <button class="btn-comprar" data-producto="martillo">
+                                Comprar
+                                </button>
+
+
+                        </article>
+                    </article>
+                </section>
+                <aside>
+                    <h2>Categorías</h2>
+                    <ul>
+                        <li><a href="herramientas.html">Herramientas</a></li>
+                        <li><a href="materiales.html">Materiales de Construcción</a></li>
+                        <li><a href="electricidad.html">Electricidad</a></li>
+                        <li><a href="plomeria.html">Plomería</a></li>
+                    </ul>
+                </aside>
+
+                <section id="contacto" class="fondo-azul">
+                    <h2>Contacto</h2>
+                    <from id="formulario-contacto">
+                        <label for="nombre">Nombre:</label>
+                        <input type="text" id="nombre" name="nombre" 
+                        placeholder= "Ingrese su nombre" required />
+
+
+                        <label for="email">Correo Electrónico:</label>
+                        <input type="email" id="email" name="email"
+                         placeholder="Ingrese su correo electrónico" required />
+
+                        <button type="submit">Enviar</button>
+                    </from>
+                    <p id="mensaje"></p>
+                </section>
+            </main>
+            <footer>
+                <p>&copy; 2026 Ferretería. Todos los derechos reservados.</p>
+            </footer>
+            
+        </body>
+    </html>

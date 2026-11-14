@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agencia de Empleo</title>
+    <link rel="stylesheet" href="CSS/estilos.css">
+</head>
+<body>
+
+<header>
+    <h1>👨‍💼 Agencia de Empleo</h1>
+    <p>Encuentra tu oportunidad laboral</p>
+</header>
+
+<nav>
+    <a href="#ofertas">Ofertas</a>
+    <a href="#categorias">Categorías</a>
+    <a href="#postulacion">Postularme</a>
+</nav>
+
+<main>
+    <section id="ofertas">
+        <h2>Ofertas laborales</h2>
+
+        <article class="oferta">
+            <h3>Desarrollador Web Junior</h3>
+            <p>Conocimientos en HTML, CSS y JavaScript.</p>
+            <button class="btn-oferta">Ver oferta</button>
+        </article>
+
+        <article class="oferta">
+            <h3>Analista de Sistemas</h3>
+            <p>Apoyo en análisis y documentación de sistemas.</p>
+            <button class="btn-oferta">Ver oferta</button>
+        </article>
+
+        <article class="oferta">
+            <h3>Diseñador Web</h3>
+            <p>Diseño de interfaces y experiencia de usuario.</p>
+            <button class="btn-oferta">Ver oferta</button>
+        </article>
+
+        <p id="detalleOferta"></p>
+    </section>
+
+    <aside id="categorias">
+        <h2>Categorías</h2>
+        <ul>
+            <li>Tecnología</li>
+            <li>Administración</li>
+            <li>Diseño</li>
+            <li>Servicio al cliente</li>
+        </ul>
+    </aside>
+
+    <section id="postulacion">
+        <h2>Formulario de postulación</h2>
+
+        <form id="formPostulacion">
+            <label for="nombre">Nombre completo:</label>
+            <input type="text" id="nombre" placeholder="Ingrese su nombre">
+
+            <label for="correo">Correo electrónico:</label>
+            <input type="email" id="correo" placeholder="ejemplo@correo.com">
+
+            <label for="cargo">Cargo:</label>
+            <select id="cargo">
+                <option value="">Seleccione un cargo</option>
+                <option value="Desarrollador Web Junior">Desarrollador Web Junior</option>
+                <option value="Analista de Sistemas">Analista de Sistemas</option>
+                <option value="Diseñador Web">Diseñador Web</option>
+            </select>
+
+            <button type="submit">Postularme</button>
+        </form>
+
+        <p id="mensaje"></p>
+        <p>Postulaciones registradas: <span id="contador">0</span></p>
+    </section>
+</main>
+
+<footer>
+    <p>© 2026 Agencia de Empleo</p>
+</footer>
+
+<script src="app.js"></script>
+</body>
+</html>
